@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+    <h1 class="recipe-heading">🍽 Recipe</h1>
+    <div class="recipe-box">
+        <pre>{{ recipe }}</pre>
+    </div>
+
+    <a href="/" class="back-link">← Back to Generator</a>
+
+</div>
+
+</body>
+</html>

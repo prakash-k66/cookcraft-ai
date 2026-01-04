@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ labels.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="page">
+
+    <h1 class="main-title">{{ labels.title }}</h1>
+
+    <form method="POST" class="form-card">
+
+        <label>{{ labels.ingredients }}</label>
+        <input type="text" name="ingredients" required>
+
+        <label>{{ labels.cooking_time }}</label>
+        <input type="number" name="time" min="1" required>
+
+        <label>{{ labels.servings }}</label>
+        <input type="number" name="servings" min="1" required>
+
+        <label>{{ labels.cuisine }}</label>
+        <input type="text" name="cuisine" required>
+
+        <button type="submit" class="btn-generate">
+            {{ labels.generate }}
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
